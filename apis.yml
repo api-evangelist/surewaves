@@ -1,7 +1,24 @@
 aid: surewaves
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/surewaves.png
 name: SureWaves
-description: 'SureWaves is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: media. This profile is a lead awaiting the enrichment pipeline.'
+description: 'SureWaves is a broadcast-television advertising technology company that integrates linear
+  TV with digital advertising infrastructure. It provides AI-powered spot and yield management for
+  broadcasters and real-time, pay-for-performance campaign tooling for advertisers, and operates India''s
+  largest spot TV network — more than 20 million spots monthly across 550+ local channels reaching 490+
+  million households. Holder of 50+ patents, backed by Accel, with offices in Bangalore, New York, McLean,
+  Mumbai and New Delhi. Added to the API Evangelist network as a portfolio-lead stub; enrichment found no
+  public API, developer portal, or SDK surface as of 2026-07.'
 url: https://raw.githubusercontent.com/api-evangelist/surewaves/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Media
+- Advertising
+- Broadcast
+- Television
+- AdTech
+- Video
+- Marketing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +45,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/surewaves-domain-security.yml
+- type: Blog
+  name: SureWaves Resources
+  url: https://www.surewaves.com/resources
 - type: Website
-  url: http://www.surewaves.com
+  url: https://www.surewaves.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
