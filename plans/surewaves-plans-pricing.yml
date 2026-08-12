@@ -1,0 +1,33 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.surewaves.com/sitemap.xml
+note: >-
+  SureWaves publishes no pricing, plans, packaging or rate-card page. Its full
+  sitemap (13 URLs, HTTP 200) contains a homepage, two audience pages
+  (/broadcasters, /advertisers), a network page (/indiaspottv), /about, and seven
+  /resources blog posts — and nothing else. Every conversion path on every page is
+  the same "Request Meeting" call to action; there is no signup, no login, no
+  trial, and no self-serve entry point. Commercial terms are negotiated
+  enterprise-to-enterprise: broadcasters buy a platform engagement, advertisers buy
+  spot inventory on the SureWaves Spot TV Network, and the marketing copy describes
+  the advertiser-side model as "pay for actual audience delivery" without attaching
+  a published rate.
+plan_count: 0
+pricing_published: false
+currency: null
+model: enterprise-negotiated
+self_serve_signup: false
+free_tier: false
+free_trial: false
+plans: []
+evidence:
+- url: https://www.surewaves.com/sitemap.xml
+  http_status: 200
+  detail: 13 URLs, none of them a pricing or plans page
+- url: https://www.surewaves.com/advertisers
+  http_status: 200
+  detail: '"Request Meeting" CTA; describes a pay-for-performance model ("Pay for actual
+    audience delivery") with no published rate'
+- url: https://www.surewaves.com/broadcasters
+  http_status: 200
+  detail: '"Request Meeting" CTA; no packaging, tiers, or pricing'

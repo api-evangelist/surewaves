@@ -1,0 +1,73 @@
+generated: '2026-08-12'
+method: searched
+source: https://www.surewaves.com/
+note: >-
+  SureWaves publishes no OpenAPI, AsyncAPI, GraphQL SDL or MCP surface, so there
+  is nothing to derive protocol conformance from — the only assertions below are
+  the organizational compliance claims SureWaves makes on its own surface. The
+  SOC 2 Type II claim is first-party and current: the SureWaves homepage renders
+  a badge with alt text "SOC 2 Type 2 Certified Logo". The underlying attestation
+  was announced by SureWaves MediaTech, Inc. on 2022-09-22 at TVB Forward 2022,
+  audited by Prescient Assurance against AICPA SSAE 18 with an unqualified
+  opinion. SureWaves publishes no trust center, no compliance portal, no report
+  request form, and no attestation date on its own site, so the currency of the
+  attestation behind the badge cannot be verified from public material.
+conformance:
+- id: soc2-type-ii
+  name: SOC 2 Type II (AICPA SSAE 18)
+  category: organizational-security
+  conforms: true
+  evidence:
+    claim: SOC 2 Type II with an unqualified opinion, AICPA standards for SOC for
+      Service Organizations (SSAE 18)
+    auditor: Prescient Assurance
+    announced: '2022-09-22'
+    announced_at: TVB Forward 2022, New York
+    first_party_badge:
+      url: https://www.surewaves.com/
+      http_status: 200
+      detail: homepage renders an image with alt text "SOC 2 Type 2 Certified Logo"
+      fetched: '2026-08-12'
+    announcement:
+      url: https://www.businesswire.com/news/home/20220922005118/en/SureWaves-achieves-SOC-2-Type-II-compliance-with-AICPA
+      http_status: 403
+      detail: Business Wire blocks non-browser clients (Akamai "Access Denied"); read
+        instead from the Internet Archive snapshot below
+    archived_announcement:
+      url: https://web.archive.org/web/2023/https://www.businesswire.com/news/home/20220922005118/en/SureWaves-achieves-SOC-2-Type-II-compliance-with-AICPA
+      http_status: 200
+      fetched: '2026-08-12'
+  caveats:
+  - The badge carries no attestation period, report date, or auditor name; the only
+    dated evidence is a 2022 press release.
+  - No trust center, no report-request workflow, and no subprocessor or sub-service
+    organization list is published.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: false
+  evidence:
+    detail: no ISO 27001 claim appears anywhere on surewaves.com or in company press
+      material
+- id: gdpr
+  name: GDPR
+  conforms: false
+  evidence:
+    detail: no privacy policy, data-processing addendum, or GDPR statement is published
+      — the 13-URL sitemap at https://www.surewaves.com/sitemap.xml (HTTP 200) contains
+      no policy pages
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence:
+    detail: not applicable — no public API, no authorization server; /.well-known/oauth-authorization-server
+      returns 404
+- id: rfc9457
+  name: RFC 9457 Problem Details for HTTP APIs
+  conforms: false
+  evidence:
+    detail: not applicable — no published contract to assert an error format against
+summary:
+  assertions: 5
+  conformant: 1
+  compliance_programs_published: 1
+  machine_readable_contracts: 0

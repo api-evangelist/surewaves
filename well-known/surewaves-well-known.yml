@@ -1,0 +1,44 @@
+generated: '2026-08-12'
+method: probed
+source: live unauthenticated HTTP probes of https://www.surewaves.com
+note: >-
+  Every /.well-known/ path probed on the only host SureWaves operates
+  (www.surewaves.com) returned HTTP 404 with a 10-byte "Not found" body. No
+  WellKnown or SecurityTxt pointer is emitted in apis.yml, because a recorded
+  absence is not a served document. SureWaves publishes no API host, developer
+  subdomain, or console subdomain — api./app./developer./developers./docs./
+  portal./platform./dashboard./console./status./trust./security./login. all
+  resolve NXDOMAIN — so www.surewaves.com is the complete surface to probe.
+hosts:
+- host: www.surewaves.com
+  probed: '2026-08-12'
+  paths:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+summary:
+  paths_probed: 8
+  hits: 0
+  documents_saved: 0
+  pointer_emitted: false
